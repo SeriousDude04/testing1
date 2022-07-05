@@ -11,7 +11,7 @@ def sample_response():
   else:
     for message in new_messages:
       message.mark_as_read()
-      messageData = "```" + message.content + "```"
-      otpVar = "OTP is " + messageData + " tap to copy"
+#       messageData = "```" +  + "```"
+      otpVar = message.content
       return otpVar
   return "error in getting otp try again "
