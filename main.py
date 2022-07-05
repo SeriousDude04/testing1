@@ -12,6 +12,9 @@ def otp_command(update , context):
   update.message.reply_text("Checking for Otp")
   response = R.sample_response()
   update.message.reply_text(response)
+  # update.message.reply_text(response,parse_mode = "MarkdownV2")
+  if response != "Not recieved otp yet , try again" and response != "error in getting otp try again ":
+    removeMessage = R.markUnread()
 def error(update , context):
   update.message.reply_text("error try again")
 def main():
