@@ -11,7 +11,7 @@ def help_command(update , context):
 def otp_command(update , context):
   update.message.reply_text("Checking for Otp")
   response = R.sample_response()
-  update.message.reply_text(response,parse_mode = "MarkdownV2")
+  update.message.reply_text(response)
 def error(update , context):
   update.message.reply_text("error try again")
 def main():
