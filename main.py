@@ -18,7 +18,7 @@ def otp_command(update , context):
 def error(update , context):
   update.message.reply_text("error try again")
 def main():
-  updater = Updater(os.environ['api_key'] , use_context = True)
+  updater = Updater(os.environ['token'] , use_context = True)
   dp = updater.dispatcher
   dp.add_handler(CommandHandler("start", start_command))
   dp.add_handler(CommandHandler("help", help_command))
