@@ -1,0 +1,43 @@
+{
+    "name": "Heroku-App-Json-Generator-Bot",
+    "logo": "https://telegra.ph//file/0920af0b4ccab760f7fb2.jpg",
+    "description": "tg txt now bot",
+    "keywords": [
+        "heroku",
+        "bot",
+        "telegram",
+        "appjson"
+    ],
+    "repository": "https://github.com/noob04coder/testing1",
+    "website": "https://github.com/noob04coder/",
+    "success_url": "https://t.me/smsTestingBot",
+    "env": {
+        "csrf": {
+            "description": "Get fromtxt now",
+            "required": "True",
+            "value": ""
+        },
+        "sid": {
+            "description": "Get from txt now",
+            "required": "True",
+            "value": ""
+        },
+        "token": {
+            "description": "Get from https//t.me/BotFather",
+            "required": "True",
+            "value": ""
+        }
+    },
+    "stack": "heroku-20",
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
